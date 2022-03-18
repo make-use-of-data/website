@@ -1,0 +1,11 @@
+{
+  "position": 4,
+  "label": "Statistics",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "stats",
+  "link": {
+    "type": "generated-index",
+    "title": "Statistics",
+  }
+}

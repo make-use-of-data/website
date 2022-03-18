@@ -1,43 +1,45 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Data Science Notes',
+    path: "/data-science-notes/intro",
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        An open-source collection of notes across varying topics on data science.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Making Use of Data',
+    path: "/making-use-of-data/intro",
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        How can data be leveraged to better organizational bottom lines?
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'OneLoneDatum Blog',
+    path: "/blog",
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Why is the Datum so lonely?
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, path}) {
   return (
     <div className={clsx('col col--4')}>
+      <Link className={styles.link} to={path}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -45,7 +47,8 @@ function Feature({Svg, title, description}) {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+          </Link>
+      </div>
   );
 }
 

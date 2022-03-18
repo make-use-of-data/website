@@ -1,0 +1,11 @@
+{
+  "position": 2,
+  "label": "Mathematical Context",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "math",
+  "link": {
+    "type": "generated-index",
+    "title": "Mathematical Context"
+  }
+}

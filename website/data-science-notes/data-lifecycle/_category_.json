@@ -1,0 +1,11 @@
+{
+  "position": 4,
+  "label": "Data Life Cycle",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "swe",
+  "link": {
+    "type": "generated-index",
+    "title": "Data Life Cycle"
+  }
+}
